@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Wahyu Saputro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    <h1>Portfolio</h1>
+    <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul id="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <img src="assets/profile.jpg" class="profile-img" alt="Profile">
+    <h2>Hi, Saya <span>Wahyu Saputro</span></h2>
+    <p>Web Developer yang fokus pada website modern, elegan, interaktif, dan responsive.</p>
+    <a href="#projects" class="btn">Lihat Project</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">Tentang Saya</h2>
+  <div class="about">
+    <div>
+      <h3>Profil</h3>
+      <p>Saya seorang web developer yang menyukai desain minimalis dan performa tinggi.</p>
+    </div>
+    <div>
+      <h3>Tujuan</h3>
+      <p>Membantu klien memiliki website profesional dan modern.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">Skill</h2>
+  <div class="skill-list">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">Projects</h2>
+  <div class="project-grid">
+
+    <div class="card project" data-title="Website Hotel" data-desc="Landing page hotel modern, responsive, dan siap dijual ke klien." data-github="https://github.com/whyusptro/Nop-Hotel">
+      <img src="assets/project1.jpg" alt="Project Hotel">
+      <h3>Website Hotel</h3>
+      <p>Landing page modern</p>
+    </div>
+
+    <div class="card project" data-title="Portfolio Developer" data-desc="Website portfolio elegan dengan dark mode dan animasi." data-github="https://github.com/username/portfolio">
+      <img src="assets/project2.jpg" alt="Portfolio">
+      <h3>Portfolio</h3>
+      <p>Personal branding</p>
+    </div>
+
+    <div class="card project" data-title="E-Commerce" data-desc="Website E-Commerce dengan desain keren dan profesional untuk UMKM dan bisnis." data-github="https://github.com/username/company-profile">
+      <img src="assets/project3.jpg" alt="E-Eommerce">
+      <h3>E-Commerce</h3>
+      <p>Website bisnis</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP PROJECT -->
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+    <a id="modalGithub" target="_blank" class="btn">View on GitHub</a>
+  </div>
+</div>
+
+<section id="contact">
+  <h2 class="title">Contact Me</h2>
+  <div class="social">
+    <a href="https://instagram.com/whyu.sptro" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/whyusptro target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:email@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/wahyu-saputro" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</section>
+
+<footer>© 2025 Wahyu Saputro</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
